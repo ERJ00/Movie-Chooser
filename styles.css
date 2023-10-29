@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#search-results, #selected-movies {
+    margin-top: 20px;
+}
+
+/* Styles for movie result elements */
+.movie {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .img-Container, .info, .btn{
+    background-color: #db9b9b;
+    border: solid 2px #000000;
+} */
+
+.info{
+    width: 300px;
+}
+
+.img-Container{
+    width: 150px;
+}
+
+.btn{
+    width: 150px;
+}
+
+.movie img {
+    width: 120px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.movie h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+
+.movie p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Styles for Add and Remove buttons */
+.add-button{
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-button {
+    padding: 5px 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-button:hover, .remove-button:hover {
+    background-color: #0056b3;
+}
+
+.remove-button:hover {
+    background-color: #b30000;
+}
+
+.count p{
+    color: #000000;
+}
+
+/* Additional styles for better spacing and readability */
+.container {
+    padding: 20px;
+}
+
+/* Styles for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* Styles for the popup content */
+.popup-content {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 80%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    overflow: auto;
+    max-height: 80%;
+}
+
+/* Styles for the close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Styles for the heading */
+h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styles for the movie list container */
+.movie-list {
+    margin-top: 20px;
+}
+
+/* Styles for individual movie items */
+.movie-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Styles for movie images */
+.movie-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}  
